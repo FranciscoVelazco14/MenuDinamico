@@ -21,7 +21,7 @@ namespace MenuDinamico
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("GIT IDA");
         }
 
         private void button1_Click(object sender, EventArgs e)

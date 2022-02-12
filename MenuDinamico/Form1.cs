@@ -11,9 +11,9 @@ using Transitions;
 
 namespace MenuDinamico
 {
-    public partial class Form1 : Form
+    public partial class MenuDinamico : Form
     {
-        public Form1()
+        public MenuDinamico()
         {
             InitializeComponent();
         }
@@ -21,7 +21,6 @@ namespace MenuDinamico
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("GIT VUELTA");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -66,6 +65,19 @@ namespace MenuDinamico
             //t.add(PanelCatalogos, "Left", 300);
             t.add(panel2, "Top", 75);
             t.run();
+        }
+
+
+        private void btnUbicacion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Llenado V_llenado = new Llenado();
+            V_llenado.Show();
+        }
+
+        private void MenuDinamico_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

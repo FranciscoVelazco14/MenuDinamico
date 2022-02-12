@@ -1,7 +1,7 @@
 ﻿
 namespace MenuDinamico
 {
-    partial class Form1
+    partial class MenuDinamico
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -30,12 +30,12 @@ namespace MenuDinamico
         private void InitializeComponent()
         {
             this.PanelCatalogos = new System.Windows.Forms.Panel();
-            this.btnCatalagos = new System.Windows.Forms.Button();
-            this.btnUbicacion = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnUbicacion = new System.Windows.Forms.Button();
+            this.btnCatalagos = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
@@ -62,54 +62,17 @@ namespace MenuDinamico
             this.PanelCatalogos.Size = new System.Drawing.Size(142, 187);
             this.PanelCatalogos.TabIndex = 6;
             // 
-            // btnCatalagos
+            // button4
             // 
-            this.btnCatalagos.AutoSize = true;
-            this.btnCatalagos.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnCatalagos.Location = new System.Drawing.Point(44, 41);
-            this.btnCatalagos.Name = "btnCatalagos";
-            this.btnCatalagos.Size = new System.Drawing.Size(142, 31);
-            this.btnCatalagos.TabIndex = 7;
-            this.btnCatalagos.Text = "Catalogos";
-            this.btnCatalagos.UseVisualStyleBackColor = false;
-            this.btnCatalagos.Click += new System.EventHandler(this.button1_Click);
-            this.btnCatalagos.MouseEnter += new System.EventHandler(this.SeleccionarBtnCatalogos);
-            // 
-            // btnUbicacion
-            // 
-            this.btnUbicacion.BackColor = System.Drawing.Color.LightBlue;
-            this.btnUbicacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUbicacion.Location = new System.Drawing.Point(0, 0);
-            this.btnUbicacion.Name = "btnUbicacion";
-            this.btnUbicacion.Size = new System.Drawing.Size(142, 36);
-            this.btnUbicacion.TabIndex = 0;
-            this.btnUbicacion.Text = "Ubicacion";
-            this.btnUbicacion.UseVisualStyleBackColor = false;
-            this.btnUbicacion.Click += new System.EventHandler(this.OcultarMenu);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightBlue;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Location = new System.Drawing.Point(0, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 36);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Certificados";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.OcultarMenu);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LightBlue;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Location = new System.Drawing.Point(0, 72);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 36);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Clientes";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.OcultarMenu);
+            this.button4.BackColor = System.Drawing.Color.LightBlue;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.Location = new System.Drawing.Point(0, 144);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(142, 36);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Vehiculos";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.OcultarMenu);
             // 
             // button3
             // 
@@ -123,17 +86,54 @@ namespace MenuDinamico
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.OcultarMenu);
             // 
-            // button4
+            // button2
             // 
-            this.button4.BackColor = System.Drawing.Color.LightBlue;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.Location = new System.Drawing.Point(0, 144);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(142, 36);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Vehiculos";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.OcultarMenu);
+            this.button2.BackColor = System.Drawing.Color.LightBlue;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.Location = new System.Drawing.Point(0, 72);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 36);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Clientes";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.OcultarMenu);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightBlue;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Location = new System.Drawing.Point(0, 36);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 36);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Certificados";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.OcultarMenu);
+            // 
+            // btnUbicacion
+            // 
+            this.btnUbicacion.BackColor = System.Drawing.Color.LightBlue;
+            this.btnUbicacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUbicacion.Location = new System.Drawing.Point(0, 0);
+            this.btnUbicacion.Name = "btnUbicacion";
+            this.btnUbicacion.Size = new System.Drawing.Size(142, 36);
+            this.btnUbicacion.TabIndex = 0;
+            this.btnUbicacion.Text = "Llenado";
+            this.btnUbicacion.UseVisualStyleBackColor = false;
+            this.btnUbicacion.Click += new System.EventHandler(this.btnUbicacion_Click);
+            // 
+            // btnCatalagos
+            // 
+            this.btnCatalagos.AutoSize = true;
+            this.btnCatalagos.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnCatalagos.Location = new System.Drawing.Point(44, 41);
+            this.btnCatalagos.Name = "btnCatalagos";
+            this.btnCatalagos.Size = new System.Drawing.Size(142, 31);
+            this.btnCatalagos.TabIndex = 7;
+            this.btnCatalagos.Text = "Catalogos";
+            this.btnCatalagos.UseVisualStyleBackColor = false;
+            this.btnCatalagos.Click += new System.EventHandler(this.button1_Click);
+            this.btnCatalagos.MouseEnter += new System.EventHandler(this.SeleccionarBtnCatalogos);
             // 
             // button5
             // 
@@ -239,20 +239,23 @@ namespace MenuDinamico
             this.button16.UseVisualStyleBackColor = false;
             this.button16.Click += new System.EventHandler(this.OcultarMenu);
             // 
-            // Form1
+            // MenuDinamico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(615, 320);
+            this.ClientSize = new System.Drawing.Size(618, 489);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCatalagos);
             this.Controls.Add(this.PanelCatalogos);
-            this.Name = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "MenuDinamico";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuDinamico_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.PanelCatalogos.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

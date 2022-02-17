@@ -33,6 +33,8 @@ namespace MenuDinamico
             this.btnLlenado = new System.Windows.Forms.Button();
             this.Tanque = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLlenado
@@ -54,7 +56,23 @@ namespace MenuDinamico
             // 
             // timer1
             // 
+            this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 500;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(602, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 32);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Llenar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Vaciar);
             // 
             // Llenado
             // 
@@ -62,6 +80,7 @@ namespace MenuDinamico
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(776, 479);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Tanque);
             this.Controls.Add(this.btnLlenado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -79,5 +98,7 @@ namespace MenuDinamico
         private System.Windows.Forms.Button btnLlenado;
         private System.Windows.Forms.ProgressBar Tanque;
         public System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button button1;
     }
 }

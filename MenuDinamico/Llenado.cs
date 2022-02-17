@@ -20,7 +20,7 @@ namespace MenuDinamico
 
         private void Llenado_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Llenado_FormClosing(object sender, FormClosingEventArgs e)
@@ -31,15 +31,22 @@ namespace MenuDinamico
 
         private void btnLlenado_Click(object sender, EventArgs e)
         {
-            timer1.Enabled = true;
-            timer1.Interval = 2000;
-            Tanque.Maximum = 10;
-            timer1.Tick += new EventHandler(timer1_Tick);
+            timer1.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            Tanque.Increment(5);
+        }
 
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            Tanque.Increment(-5);
+        }
+
+        private void Vaciar(object sender, EventArgs e)
+        {
+            timer2.Start();
         }
     }
 }

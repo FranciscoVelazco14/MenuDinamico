@@ -254,7 +254,7 @@ namespace MenuDinamico
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuDinamico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "MenuDinamico";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuDinamico_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.PanelCatalogos.ResumeLayout(false);

@@ -42,6 +42,7 @@ namespace MenuDinamico
         private void timer2_Tick(object sender, EventArgs e)
         {
             Tanque.Increment(-5);
+            MessageBox.Show("Si jalo");
         }
 
         private void Vaciar(object sender, EventArgs e)
